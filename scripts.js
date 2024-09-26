@@ -80,3 +80,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     updateCartUI(); // Initial UI update
 });
+
+        // JavaScript to handle form submission (could be connected to a backend)
+        document.getElementById('booking-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Gather form data
+            const service = document.getElementById('service').value;
+            const petName = document.getElementById('pet-name').value;
+            const ownerName = document.getElementById('owner-name').value;
+            const email = document.getElementById('email').value;
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const comments = document.getElementById('comments').value;
+
+            // Placeholder logic for form submission
+            alert(`Booking Details:\nService: ${service}\nPet Name: ${petName}\nOwner Name: ${ownerName}\nEmail: ${email}\nDate: ${date}\nTime: ${time}\nComments: ${comments}`);
+
+            // You can send the form data to your backend or API here
+            // Example:
+            // fetch('/api/bookings', {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json'
+            //     },
+            //     body: JSON.stringify({
+            //         service, petName, ownerName, email, date, time, comments
+            //     })
+            // }).then(response => response.json())
+            //   .then(data => console.log(data))
+            //   .catch(error => console.error('Error:', error));
+        });

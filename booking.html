@@ -1,0 +1,50 @@
+
+
+<link rel="stylesheet" href="styles.css"> 
+
+<!-- Button below the form -->
+<div class="text-center mt-4">
+    <a href="index.html" class="btn btn-primary">Go to Home</a>
+</div>
+
+<div class="container my-5">
+    <h2 class="text-center">Book a Pet Care Service</h2>
+    <form id="booking-form" class="mt-4">
+        <div class="mb-3">
+            <label for="service" class="form-label">Select Service</label>
+            <select class="form-select" id="service" required>
+                <option value="">Choose a service...</option>
+                <option value="Grooming">Grooming</option>
+                <option value="Pet Sitting">Pet Sitting</option>
+                <option value="Training">Training</option>
+                <option value="Vet Consultation">Vet Consultation</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="pet-name" class="form-label">Pet Name</label>
+            <input type="text" class="form-control" id="pet-name" placeholder="Enter your pet's name" required>
+        </div>
+        <div class="mb-3">
+            <label for="owner-name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="owner-name" placeholder="Enter your name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="mb-3">
+            <label for="date" class="form-label">Preferred Date</label>
+            <input type="date" class="form-control" id="date" required>
+        </div>
+        <div class="mb-3">
+            <label for="time" class="form-label">Preferred Time</label>
+            <input type="time" class="form-control" id="time" required>
+        </div>
+        <div class="mb-3">
+            <label for="comments" class="form-label">Additional Comments</label>
+            <textarea class="form-control" id="comments" rows="3" placeholder="Any special requests or information"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Booking</button>
+    </form>
+</div>
+
